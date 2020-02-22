@@ -26,7 +26,7 @@ class Solution {
         return result;
     }
 
-    public int convert(int length){                                     //计算相应的权位，由于使用了递归这个步骤比较消耗内存
+    public int convert(int length){                                     //计算相应的权位。由于使用了递归，这个步骤比较消耗内存
         int sum = 2;
         return length > 0 ? sum * convert(length -1) : 1;
     }
